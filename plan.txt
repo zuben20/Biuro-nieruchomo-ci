@@ -1,0 +1,4 @@
+1.wypisywanie aktualnych wycieczek
+2.wyszukiwarka stolic
+3.formularz pytaniowy
+4.odnosmnik do logoiwania do bycia adminem potem przenosi na nowa strone z wypisanymi danymi i mozna je usuwac bπdü edytowac

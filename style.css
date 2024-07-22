@@ -1,0 +1,306 @@
+body{
+    margin:0 auto;
+    cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
+    background-color: #EAEAEA;
+}
+
+p,a,span{
+    font-family: Helvetica, Sans-Serif;
+    font-size: 1.2em;
+}
+h1,h2,h3{
+    font-family: arial, Sans-Serif;
+}
+
+@keyframes foto{
+    10%{
+        opacity: 0.25%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+main{  
+    margin:0 auto;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height:10em;
+
+}
+
+nav {
+    position: fixed;
+    width:100%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    background-color: white;
+    z-index:1; 
+    background-image: linear-gradient(to right, #4286f4 , white,#4286f4);
+}
+
+.navtekst {
+    position: relative;
+    top: 2em;
+    float: left;
+    display: block;
+    color: black;
+    padding: 1em ;
+    text-decoration: none;
+    font-size:1.1em;
+}
+
+.navtekst2 {
+    position: relative;
+    top: 30px;
+    float: right;
+    display: block;
+    color: black;
+    padding: 20px ;
+    font-size: 17px;
+}
+
+
+nav a:hover {
+    background: #787878;
+    color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+nav a:visited {
+    background: #ddd;
+    color: black;
+}
+
+
+
+
+footer{
+    
+    width: 100%;
+    height:auto;
+    background-color: #333;
+    position:relative;
+    bottom:0;
+    color: white;
+    text-align: center;
+    
+}
+
+
+.zdj1{
+    float: left;   
+}
+
+.slider{
+	width:80%;
+	margin:0 auto;
+	padding: 10px;
+	text-align:center;
+    margin-bottom: 100px;
+}
+.sliderson{
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding: 5px;
+    margin-bottom: 5px;
+    animation:foto 4.9s infinite;
+    z-index: 5;
+}
+
+.slider2{
+	width:80%;
+	margin:0 auto;
+	padding: 10px;
+	text-align:center;
+
+}
+.sliderson2{
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding: 5px;
+    margin-bottom: 5px;
+    animation:foto2 4.9s fades;
+    z-index: 5;
+}
+.content2{
+    
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 1em
+
+    
+}
+
+.con2left{
+    background-image: linear-gradient(to bottom right, #4286f4 , white);
+    width: 70%;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding:1em
+    
+}
+
+.con2right{
+    background-image: linear-gradient(to top left, white,#4286f4);
+    width: 30%;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding:1em
+}
+
+
+
+.content3{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 1px 2px 5px black;
+    padding: 3em;
+    background-image: linear-gradient(to right, #4286f4 , white,#4286f4);
+}
+
+
+.con3left{
+    width: 30%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding:1em;
+    background-color: #EAEAEA;
+    
+}
+.con3mid{
+    width: 30%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding:1em;  
+    background-color: #EAEAEA;
+}
+.con3right{
+    width: 30%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding:1em;
+    background-color: #EAEAEA;
+        
+}
+
+
+.foottekst{
+    position: relative;
+    top:20%;
+}
+
+table{
+    margin: 0 auto;
+}
+td{
+    padding: 2em;
+}
+
+.gal{
+    width: 18vw;
+    box-shadow: 3px 3px 3px black;
+    transition: transform .2s; 
+}
+.gal:hover {
+    transform: scale(1.5); 
+     box-shadow: 5px 5px 5px black;
+}
+
+.content4{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 1px 2px 5px black;
+    padding: 3em;
+    background-image: linear-gradient(to right, #4286f4 , white,#4286f4);
+    
+}
+.content5{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 1px 2px 5px black;
+    padding: 3em;
+    background-image: linear-gradient(to right, #4286f4 , white,#4286f4);
+    
+}
+.promo{
+    width:98%;
+	margin:0 auto;
+	padding: 10px;
+	text-align:center;
+    margin-bottom: 100px;
+}
+
+.guzik1{
+    border:0.3em outset gray;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+}
+.guzik2{
+    border:0.3em outset gray;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+    position: relative;
+    bottom: 11vw;
+    padding-top:3.7vw;
+    padding-bottom:3.7vw;
+}
+
+.con5slide{
+    width: 100%;
+    margin: 0 auto;
+}
+.midOferta{
+    width: 60%;
+    box-shadow: 3px 2px 5px black;
+    margin: 0 auto;
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 1em;
+}
+
+.leftkontakt{
+    width: 40%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding:1em;
+    background-color: #EAEAEA;
+}
+.rightkontakt{
+    width: 50%;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+    padding:1em;
+    background-color: #EAEAEA;
+}
+
+
+button{
+    background-image: linear-gradient(to right, #4286f4 , blue,#4286f4);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(to right, #4286f4 ,#4286f4);
+}
+
+button a,button a:visited{
+    text-decoration: none;
+    color: white;
+}
+

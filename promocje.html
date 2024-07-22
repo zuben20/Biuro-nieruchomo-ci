@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pl">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Wojtaszek">
+        <meta name="description" content="Biuro Podróży Stolice Europy">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="GRAFIKA/favicon.jpg">
+        <title>CAPITALS</title>
+    
+        
+        <script>
+            function los(){
+                var x = Math.floor(Math.random() * 3+1);
+                if(x == 1){
+                    document.getElementById("obraz").src = ("GRAFIKA/promo1.jpg");
+                    document.getElementById("tekst1").innerHTML = ("<h1>Warszawa</h1><hr><h2>Tydzień (7dni)</h2><hr><h2>W obie strony</h2><hr><h2>Hotel wliczony w cene</h2><hr><h2>Prywatny Przewodnik</h2><hr><h2>Zaplanowane wycieczki po całym kraju</h2>");
+                    document.getElementById("tekst2").innerHTML = ("<h3 style='text-decoration-line: line-through;'>4000zł'</h3><h1>3500zł</h1><hr>");
+                    document.getElementById("tekst3").innerHTML = ("<h1>Wolne terminy</h1><hr><h3>01.01.2023-08.01.2023</h3><h3>10.01.2023-17.01.2023</h3><h3>03.02.2023-10.02.2023</h3><h3>11.03.2023-18.03.2023</h3><h3>01.04.2023-08.04.2023</h3>");          
+                }
+                
+                if(x == 2){
+                    document.getElementById("obraz").src = ("GRAFIKA/promo2.jpg");
+                    document.getElementById("tekst1").innerHTML = ("<h1>Berlin</h1><hr><h2>Tydzień (7dni)</h2><hr><h2>W obie strony</h2><hr><h2>Hotel wliczony w cene</h2>");
+                    document.getElementById("tekst2").innerHTML = ("<h3 style='text-decoration-line: line-through;'>4000zł'</h3><h1>2600zł</h1><hr>");
+                    document.getElementById("tekst3").innerHTML = ("<h1>Wolne terminy</h1><hr><h3>05.04.2023-12.04.2023</h3><h3>15.06.2023-22.06.2023</h3><h3>23.06.2023-30.06.2023</h3>");
+                    
+                }
+                
+                if(x == 3){
+                    document.getElementById("obraz").src = ("GRAFIKA/promo3.jpg");
+                    document.getElementById("tekst1").innerHTML = ("<h1>Paryż</h1><hr><h2>Dwa tygodnie (14dni)</h2><hr><h2>W obie strony</h2><hr><h2>Hotel nie jest wliczony</h2>");
+                    document.getElementById("tekst2").innerHTML = ("<h3 style='text-decoration-line: line-through;'>5000zł'</h3><h1>3500zł</h1><hr>");
+                    document.getElementById("tekst3").innerHTML = ("<h1>Wolne terminy</h1><hr><h3>19.01.2023-02.02.2023</h3><h3>10.03.2023-24.03.2023</h3>");
+                    
+                }
+            }
+            
+        
+        </script>
+        <script src="czas.js"></script>
+        
+    </head>
+    
+    <body onload="los(),czas()">
+
+        
+        <main>
+
+                <header>
+                    <nav>
+                        <a href="index.html"><img style="margin-left:10%;margin-bottom:0.1%;  " class="zdj1" src="GRAFIKA/logo.png" alt="logo"></a>
+                        <a class="navtekst" href="index.html">HOME</a>
+                        <a class="navtekst" href="galeria.html">GALERIA</a>
+                        <a class="navtekst" href="kontakt.php">KONTAKT</a>
+                        <a class="navtekst" href="oferty.html">OFERTY</a>
+                        <a class="navtekst" href="promocje.html">PROMOCJE</a>
+                        <span class="navtekst2" style="margin-left: 5em;">AKTUALNY CZAS : <span id="godzina"></span></span>
+                    </nav>
+                </header>
+
+
+            
+                    <h1 style="text-align: center">PROMOCJE</h1>
+            
+               
+
+                    <div class="promo">
+                            <img  style="width: 50em;height: 30em;padding:0.5em;border: 1px solid black;" src="GRAFIKA/promo1.jpg" id="obraz" alt="zdjecie"><br>
+                    </div>  
+                    
+                     <div class="content5">
+                         
+                        <div class="con3left">
+                            
+                            <span style="text-align: center" id="tekst1"></span>
+                            
+                        </div>
+
+                            <span style="width: 5%;"></span>
+
+                        <div class="con3mid">
+                            
+                            <span style="text-align: center" id="tekst2"></span><br>
+                            <form  style="margin: 0 auto;text-align: center" action="kontakt.php">
+                                <button class="guzik1" style="margin: 0 auto;text-align: center" type="submit" value="REZERWUJ">REZERWUJ</button>
+                            </form>
+                            
+                        </div>
+
+                            <span style="width: 5%;"></span>
+
+                        <div class="con3right">
+                            
+                            <span style="text-align: center" id="tekst3"></span>
+
+                        </div>
+
+
+                </div>
+
+                
+            
+            
+            
+            </main>
+            
+            
+        
+            <footer style="margin-top: 5em">
+                
+                <p style="margin-bottom:0;padding-top: 0.5%">Copyright 2023 Paweł Wojtaszek 4Ti ZSIPO </p>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/ig.png" alt="zdj"></a>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/fb.png" alt="zdj"></a>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/twitter.png" alt="zdj"></a>
+
+            </footer>
+            
+            
+        
+    </body>
+</html>

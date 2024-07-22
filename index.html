@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="author" content="Paweł Wojtaszek">
+        <meta name="description" content="Biuro Podróży Stolice Europy">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="GRAFIKA/favicon.jpg">
+        <title>CAPITALS | HOME</title>
+        
+        <script>
+            function zegar()
+            {
+            var rok= new Date(2023,5,24);
+            var czas = new Date();
+            var d=czas.getDate();
+            var m=czas.getMonth()+1;
+            var y=czas.getFullYear();
+             var s=czas.getSeconds();
+                if(d<10)d="0"+d;
+                        if(m<10)m="0"+m;   
+                var wakcje=rok-czas;
+                wakcje=wakcje/1000/60/60/24;
+                wakcje=Math.floor(wakcje);
+            document.write("<br><p style='text-align: center;margin: 0;'>Dzisiaj jest: "+d+"/"+m+"/"+y+"</p><br>");
+            document.write("<p style='text-align: center;margin: 0;'>Do wkacaij pozostało:"+wakcje+" dni</p>");
+                
+            }
+            
+            var zdj=1;
+            
+            function galeria1(){
+            if(zdj == 1) zdj=7;
+                else zdj--;
+                document.getElementById("zdie").src = ("GRAFIKA/"+zdj+".jpg");
+                
+            }
+            setInterval("galeria1()",5000);
+            function galeria2(){
+            if(zdj ==7) zdj= 1;
+                else zdj++;
+                document.getElementById("zdie").src = ("GRAFIKA/"+zdj+".jpg");
+            }
+            
+
+            
+       </script>
+        
+        <script src="czas.js"></script>
+        
+        
+    </head>
+    
+    <body  onload="czas()">
+
+        
+        <main>
+
+                <header>
+                    <nav>
+                        <a href="index.html"><img style="margin-left:10%;margin-bottom:0.1%;  " class="zdj1" src="GRAFIKA/logo.png" alt="logo"></a>
+                        <a class="navtekst" href="index.html">HOME</a>
+                        <a class="navtekst" href="galeria.html">GALERIA</a>
+                        <a class="navtekst" href="kontakt.php">KONTAKT</a>
+                        <a class="navtekst" href="oferty.html">OFERTY</a>
+                        <a class="navtekst" href="promocje.html">PROMOCJE</a>
+                        <span class="navtekst2" style="margin-left: 5em;">AKTUALNY CZAS : <span id="godzina"></span></span>
+                    </nav>
+                </header>
+
+
+                
+
+
+                    <h1 style="text-align: center">NAJLEPSZE na rynku biuro podróży po stolicach Europy CAPITALS</h1>
+
+
+                    <div class="slider">
+                            <img class="sliderson" src="GRAFIKA/1.jpg" id="zdie" alt="zdjecie"><br>
+                    </div>  
+
+
+
+                
+
+                <div class="content2">
+                    
+                    <div class="con2left">
+                        <h1 style="font-size:2em;margin-bottom: 1em;text-align: center">DLACZEGO CAPITALS ?</h1>
+                        <p style="text-align: center">Ponieważ świadczymy najwyższej klasy usługi za jak najniższą cenę.</p>
+                        <p style="text-align: center">Prowadzimy transport po <strong style="text-decoration: underline;">WSZYSTKICH</strong> stolicach europy.</p><br>
+                        
+                        <h1 style="font-size:2em;margin-bottom: 1em;text-align: center">SAMOLOTY i ŁODZIE</h1>
+                        <p style="text-align: center">Możesz sam wybrać czy chcesz dolecieć czy dopłynąć do celu podróży.</p><br>
+                        
+                        <h1 style="font-size:2em;margin-bottom: 1em;text-align: center">OD POCZĄTKU DO KOŃCA</h1>
+                        <p style="text-align: center">Mamy możliwość planowania wycieczek i wakacji od dojazdu do docelowego środka transportu, aż po bezpieczny powrót do domu.</p><br>
+                        
+                        
+                    
+                    
+                        
+                                    <span style="width: 5%;"></span>
+                    
+                    
+                        
+                        
+
+                        <h3 style="text-align: center;margin: 0;">
+                    <script>
+                        zegar();
+      
+                    </script>
+                        </h3><br>
+                        
+                        
+                        
+                             
+                        
+                    </div>
+                    
+                                    <span style="width: 5%;"></span>
+                    
+                    <div class="con2right">
+                        <h1 style="text-align: center;margin-top:2em;">OFERTY</h1>
+                        <p style="text-align: center">Zachęcamy do zapoznania się z naszym obszernym katalogiem ofert </p>
+                        <h1 style="text-align: center;margin-top:2em;">KONTAKT</h1>
+                        <p style="text-align: center">W razie jakichkolwiek pytań zapraszamy do kontaktu telefonicznego <strong>+48 123 123 123</strong> lub na naszej stronie w dziale KONTAKT</p>
+                        <h1 style="text-align: center;margin-top:2em;">GALERIA</h1>
+                        <p style="text-align: center">W zakładce GALERIA mogą Państwo znaleźć zdjęcia z podróży naszych klientów </p>
+                    </div>
+
+                </div>
+            
+            
+            
+            </main>
+            
+            
+        
+            <footer style="margin-top: 5em">
+                
+                <p style="margin-bottom:0;padding-top: 0.5%">Copyright 2023 Paweł Wojtaszek 4Ti ZSIPO </p>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/ig.png" alt="social"></a>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/fb.png" alt="social"></a>
+                <a href="#" ><img style="width: 3vw;" src="GRAFIKA/twitter.png" alt="social"></a>
+
+            </footer>
+            
+            
+        
+    </body>
+</html>
